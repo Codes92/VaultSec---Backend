@@ -4,6 +4,7 @@ const {Pool} = require("pg"); // Pool class is used to manage database connectio
 // Create pool for querying database
 const pool = new Pool({
     connectionString: process.env.DATABASE_URL,
+    family: 4,
     ssl: {
         rejectUnauthorized: false
     }
