@@ -3,11 +3,16 @@ const {Pool} = require("pg"); // Pool class is used to manage database connectio
 
 // Create pool for querying database
 const pool = new Pool({
-    host: "localhost", // Database server
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
+    /* host: "localhost", // Database server
     user: "postgres", // Database username
     password: process.env.DB_PASSWORD, // User password
     database: "vaultsec_db", // Database name
     port: 5432 // Port number
+    */
 });
 
 // Query test to check database connection working

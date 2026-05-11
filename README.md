@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # VaultSec
 **An open-source security platform that combines encrypted secret storage with a security tool suite and real-time threat intelligence - built as a portfolio project to demonstrate practical security engineering. 
 Designed to be accessible for everyday users while offering useful tools for developers and security practitioners.
@@ -29,3 +30,7 @@ Stores credentials with zero-knowledge encryption, inspect SSL certificates, ana
 **NVD/OSV** - CVE vulnerability data
 
 # Architecture and security decisions
+=======
+# VaultSec---Backend
+Backend code repository for VaultSec application
+>>>>>>> 1d6b85b32cc30aa173c17d8f936fbb9d27e744b2
