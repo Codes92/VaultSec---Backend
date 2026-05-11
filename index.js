@@ -56,7 +56,7 @@ app.use(helmet({
             styleSrc: ["'self'", "'unsafe-inline'"],
             imgSrc: ["'self'", process.env.FRONTEND_URL, "data:"],
             fontSrc: ["'self'"],
-            connectSrc: ["'self'", "http://localhost:8081"]
+            connectSrc: ["'self'", process.env.FRONTEND_URL, "https://vaultsec-backend-production.up.railway.app"]
         }
     },
     crossOriginEmbedderPolicy: {policy: "require-corp"}
