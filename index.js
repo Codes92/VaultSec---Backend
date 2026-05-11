@@ -8,8 +8,9 @@ const requiredEnvVars = [
     'JWT_SECRET',
     'TOTP_ENCRYPTION_KEY',
     'FRONTEND_URL',
-    'DB_PASSWORD',
-    'DB_NAME'
+    'DATABASE_URL'
+    /*'DB_PASSWORD',
+    'DB_NAME' */
 ];
 
 /* 
