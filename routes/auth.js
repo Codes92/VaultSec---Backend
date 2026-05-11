@@ -44,9 +44,10 @@ router.post("/login", validateLogin, async(req, res) => {
 
         res.cookie("token", response.token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "strict",
-            maxAge: 60 * 60 * 1000
+            secure: true,
+            /* secure: process.env.NODE_ENV === "production", */
+            sameSite: "None",
+            maxAge: 60 * 60 * 1000 // 1 hour
         });
         res.json({email: response.email, kdfSalt: response.kdfSalt, message: "Login Successful"});
     }

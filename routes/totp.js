@@ -20,8 +20,10 @@ router.post("/challenge", totpLimiter, async(req, res) => {
 
         res.cookie("token", response.token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "strict",
+            /*secure: process.env.NODE_ENV === "production",
+            sameSite: "strict", */
+            secure: true,
+            sameSite: "None",
             maxAge: 60 * 60 * 1000
         });
         res.json({email: response.email, kdfSalt: response.kdfSalt, message: "Login Successful"});
