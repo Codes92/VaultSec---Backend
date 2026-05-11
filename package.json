@@ -1,0 +1,27 @@
+{
+  "name": "vaultsec",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "argon2": "^0.44.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.2",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "otplib": "^13.4.0",
+    "pg": "^8.20.0",
+    "qrcode": "^1.5.4",
+    "rss-parser": "^3.13.0",
+    "tls": "^0.0.1",
+    "validator": "^13.15.35"
+  }
+}
