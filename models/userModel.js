@@ -38,6 +38,7 @@ class User
         catch (error)
         {
             // console.error("findByEmail raw error:", error);
+            console.error(error);
             throw new Error("Database error during email lookup");
         }
     };
