@@ -1,3 +1,5 @@
+require('dns').setDefaultResultOrder('ipv4first');
+
 /** Set up cors to enable cross-origin resource sharing
  * (requests from specific origin are allowed)
  * (also prevents other frontends talking to the API)
