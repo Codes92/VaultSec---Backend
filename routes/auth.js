@@ -18,8 +18,9 @@ router.post("/register", validateRegistration, async (req, res) => {
 
         res.cookie("token", token, {
             httpOnly: true,
-            secure: process.env.NODE_ENV === "production",
-            sameSite: "strict",
+            secure: true,
+            /* secure: process.env.NODE_ENV === "production", */
+            sameSite: "None",
             maxAge: 60 * 60 * 1000 // 1 hour
         });
         res.json({email, kdfSalt, message: "Registration Successful"});

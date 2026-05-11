@@ -71,6 +71,9 @@ app.use(helmet({
 app.use("/auth", authLimiter);
 app.use(cookieParser());
 
+const { contentSecurityPolicy } = require('helmet');
+const { crossOriginEmbedderPolicy } = require('helmet');
+
 // ========== ROUTE HANDLERS ===========
 // Load the route handlers
 
@@ -90,8 +93,6 @@ const securityRoutes = require("./routes/security");
 app.use("/security", securityRoutes);
 
 const intelRoutes = require("./routes/intelligence");
-const { contentSecurityPolicy } = require('helmet');
-const { crossOriginEmbedderPolicy } = require('helmet');
 app.use("/intelligence", intelRoutes);
 
 process.on('unhandledRejection', (reason) => {
