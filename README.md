@@ -36,6 +36,5 @@ Backend code repository for VaultSec application
 >>>>>>> 1d6b85b32cc30aa173c17d8f936fbb9d27e744b2
 
 # Demo video below
-https://github.com/user-attachments/assets/c19841ca-d2ac-4563-96d9-b8305624c0d2
 
 
